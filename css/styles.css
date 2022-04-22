@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Akshar", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.header {
+  text-transform: uppercase;
+  height: 95vh;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(194, 166, 114, 0.7),
+      rgba(91, 85, 26, 0.7)
+    ),
+    url("https://lh3.googleusercontent.com/KJc1cSIxiCgPa5KaGSi62hT2kiVcJWDCxAwBciAOMw0Jz7l2zkj5vJor1V_UivSXvJaxvSzPOVyMQ_BGrgzrgkXi40nOJEMkH0d7s9LPJR8bEGITE0vJV3cV4DMCSMvVTj2yXUoInQ=w2400");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.slogan-1-box,
+.slogan-2-box,
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+
+.slogan-1-box {
+  height: 45vh;
+  align-items: flex-end;
+}
+
+.slogan-1 {
+  font-weight: 400;
+  letter-spacing: 5.8px;
+  font-size: 90px;
+}
+
+.slogan-2 {
+  font-weight: 400;
+  letter-spacing: 5.44px;
+  font-size: 40px;
+  padding-bottom: 100px;
+}
+
+.tours-button {
+  background-color: #fff;
+  border: none;
+  font-family: "Akshar", sans-serif;
+  font-size: 24px;
+  color: #4d4d4d;
+  letter-spacing: 3.21px;
+  text-transform: uppercase;
+  padding: 30px 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}

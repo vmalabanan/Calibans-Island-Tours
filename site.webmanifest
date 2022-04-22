@@ -1,0 +1,19 @@
+{
+  "name": "",
+  "short_name": "",
+  "icons": [
+    {
+      "src": "https://lh3.googleusercontent.com/HXSrqTjNHMioNUY9rZ8jOOz38OThYROCXfkYjk_1M8f0Q3VOT_WKQ5HiEGv9OuFqUEAyezuhqkDkH39yRIDEIt8wxjMlO2luQy0wShFfap_emqpGdOxGN9g87KMYHTO_1jQV15t_ng=s192-p-k",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/dMMswSIXr_uc578yKqX2f48TczuhdfwY8hps_ZlsQr4F-k2k7dDTSVOqG8psn10P881dDcHRyqYAXg8SyAgAI907-XdmXovOsetkA5p9kLvEjJy1WG5eJ4rg-MkWkneyyGl-Ilq9HQ=w2400",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone"
+}
