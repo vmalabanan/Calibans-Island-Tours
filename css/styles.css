@@ -45,17 +45,24 @@ body {
   align-items: flex-end;
 }
 
+.slogan-2-box {
+  margin-bottom: 90px;
+}
+
 .slogan-1 {
   font-weight: 400;
   letter-spacing: 5.8px;
   font-size: 90px;
+
+  animation: moveInLeft 1s ease-out;
 }
 
 .slogan-2 {
   font-weight: 400;
   letter-spacing: 5.44px;
   font-size: 40px;
-  padding-bottom: 100px;
+
+  animation: moveInRight 1s ease-out;
 }
 
 .tours-button {
@@ -69,4 +76,54 @@ body {
   padding: 30px 50px;
   border-radius: 50px;
   cursor: pointer;
+
+  animation: moveUp 1.5s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
