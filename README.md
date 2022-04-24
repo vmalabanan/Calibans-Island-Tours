@@ -1,4 +1,4 @@
 # Calibans-Island-Tours
-A website for the fictitious "Caliban's Island Tours" run by the character from Shakespeare's _The Tempest_
+Part of my websites for fictional characters series. This is a website for "Caliban's Island Tours," a business run by the character from Shakespeare's _The Tempest_
 
 https://caliban.netlify.app/
