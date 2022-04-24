@@ -46,6 +46,7 @@ body {
 }
 
 .slogan-2-box {
+  /* height: 15vh; */
   margin-bottom: 90px;
 }
 
@@ -65,19 +66,58 @@ body {
   animation: moveInRight 1s ease-out;
 }
 
-.tours-button {
-  background-color: #fff;
-  border: none;
-  font-family: "Akshar", sans-serif;
+.button:link,
+.button:visited {
   font-size: 24px;
-  color: #4d4d4d;
   letter-spacing: 3.21px;
-  text-transform: uppercase;
+  text-decoration: none;
   padding: 30px 50px;
   border-radius: 50px;
-  cursor: pointer;
+  position: relative;
 
-  animation: moveUp 1.5s ease-out;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-white {
+  background-color: #fff;
+  color: #4d4d4d;
+}
+
+.button-animated {
+  animation: moveUp 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.button::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  transition: all 0.4s;
+}
+
+.button-white::after {
+  background-color: #fff;
+}
+
+.button:hover::after {
+  transform: scaleX(1.35) scaleY(1.45);
+  opacity: 0;
 }
 
 @keyframes moveInLeft {
@@ -115,11 +155,7 @@ body {
 @keyframes moveUp {
   0% {
     opacity: 0;
-    transform: translateY(150px);
-  }
-
-  50% {
-    opacity: 0;
+    transform: translateY(45px);
   }
 
   100% {
